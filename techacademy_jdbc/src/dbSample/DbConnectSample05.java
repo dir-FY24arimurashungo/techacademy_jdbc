@@ -8,13 +8,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-
-import javax.xml.crypto.dsig.keyinfo.KeyInfo;
 
 public class DbConnectSample05 {
 
-    public static void main(String[] args) {
         //データベース接続と結果取得のための変数
         Connection con = null;
         PreparedStatement pstmt = null;
@@ -83,7 +79,6 @@ public class DbConnectSample05 {
                 }
             }
         }
-    }
     
     //キーボードから入力された値をStringで返す 引数：なし 戻り値：入力された文字列
     private static String keyIn() {
